@@ -1,0 +1,19 @@
+.recipe__item {
+  border: 1px solid rgb(183, 23, 23);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.recipe__img {
+  border-radius: 10px;
+}
+
+.recipe__text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+ul {
+  list-style: none;
+}
