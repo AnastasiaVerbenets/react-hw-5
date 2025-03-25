@@ -2,12 +2,12 @@ import PropTypes from "prop-types";
 import { IoTimeOutline } from "react-icons/io5";
 import { IoPeople } from "react-icons/io5";
 import { CiWheat } from "react-icons/ci";
-import { Item, Image, Title, Thumb, Text } from "./ResipeInfo.styled";
+import {  Image, Title, Thumb, Text } from "./ResipeInfo.styled";
 import { Difficulty } from "components/Difficulty/Difficulty";
 
 export const RecipeInfo = ({ imageUrl, name, time, servings, calories, difficulty }) => {
     return (
-        <Item>
+        <li>
             <Image src={imageUrl} alt={name} width="400" />
             <Title>{name}</Title>
             <Thumb>
@@ -16,7 +16,7 @@ export const RecipeInfo = ({ imageUrl, name, time, servings, calories, difficult
             <Text><CiWheat size={25}/>{calories} calories</Text>
             </Thumb>
             <Difficulty difficulty={difficulty} />
-        </Item>
+        </li>
     );
 };
 

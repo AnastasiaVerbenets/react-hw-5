@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-export const Item = styled.li``;
-
 export const Image = styled.img`
   width: 400px;
   border-radius: 30px;
