@@ -13,14 +13,23 @@ export const Recipe = ({ recipe }) => {
                     time={time}
                     servings={servings}
                     calories={calories}
+                    difficulty={difficulty}
                 />
-
-                
             })}
         </List>
     );
 };
 
 Recipe.propTypes = {
-    recipe: PropTypes.array
+    recipe: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            imageUrl: PropTypes.string.isRequired,
+            name: PropTypes.string.isRequired,
+            time: PropTypes.string.isRequired,
+            servings: PropTypes.number.isRequired,
+            calories: PropTypes.number.isRequired,
+            difficulty: PropTypes.number.isRequired
+        })
+    )
 };

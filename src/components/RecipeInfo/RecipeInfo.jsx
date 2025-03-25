@@ -5,7 +5,6 @@ import { CiWheat } from "react-icons/ci";
 import { Item, Image, Title, Thumb, Text } from "./ResipeInfo.styled";
 import { Difficulty } from "components/Difficulty/Difficulty";
 
-
 export const RecipeInfo = ({ imageUrl, name, time, servings, calories, difficulty }) => {
     return (
         <Item>
@@ -16,8 +15,7 @@ export const RecipeInfo = ({ imageUrl, name, time, servings, calories, difficult
             <Text><IoPeople size={25}/>{servings} servings</Text>
             <Text><CiWheat size={25}/>{calories} calories</Text>
             </Thumb>
-
-            <Difficulty/>
+            <Difficulty difficulty={difficulty} />
         </Item>
     );
 };
@@ -28,5 +26,5 @@ RecipeInfo.propTypes = {
     time: PropTypes.string,
     servings: PropTypes.number,
     calories: PropTypes.number,
-    difficulty: PropTypes.number,
+    difficulty: PropTypes.number
 };

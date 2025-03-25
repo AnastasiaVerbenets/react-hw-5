@@ -22,4 +22,10 @@ export const Level = styled.p`
   border-radius: 30px;
   padding: 10px;
   font-size: 17px;
+  transition: all 0.3s ease;
+
+  &.active {
+    background-color: rgb(255, 87, 87);
+    color: white;
+  }
 `;
