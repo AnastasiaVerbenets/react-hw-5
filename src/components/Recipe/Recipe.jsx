@@ -1,10 +1,10 @@
 import PropTypes from "prop-types"; 
 import { RecipeInfo } from "../RecipeInfo/RecipeInfo";
-import css from "./Recipe.module.css";
+import { List } from "./Recipe.styled";
 
 export const Recipe = ({ recipe }) => {
     return (
-        <ul className={css.recipe__list}>
+        <List>
             {recipe.map(({ imageUrl, name, time, servings, calories, difficulty, id }) => {
                 return <RecipeInfo
                     key={id}
@@ -13,10 +13,11 @@ export const Recipe = ({ recipe }) => {
                     time={time}
                     servings={servings}
                     calories={calories}
-                    difficulty={difficulty}
                 />
+
+                
             })}
-        </ul>
+        </List>
     );
 };
 
