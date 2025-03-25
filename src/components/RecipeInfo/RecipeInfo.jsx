@@ -5,6 +5,7 @@ import { CiWheat } from "react-icons/ci";
 import { Item, Image, Title, Thumb, Text } from "./ResipeInfo.styled";
 import { Difficulty } from "components/Difficulty/Difficulty";
 
+
 export const RecipeInfo = ({ imageUrl, name, time, servings, calories, difficulty }) => {
     return (
         <Item>
